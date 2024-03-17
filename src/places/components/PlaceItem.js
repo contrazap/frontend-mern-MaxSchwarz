@@ -3,6 +3,7 @@ import "./PlaceItem.css";
 import Card from "../../shared/components/UIElements/Card";
 import Button from "../../shared/components/FormElements/Button";
 import Modal from "../../shared/components/UIElements/Modal";
+import Map from "../../shared/components/UIElements/Map";
 
 const PlaceItem = (props) => {
   const [showMap, setShowMap] = useState(false);
@@ -30,7 +31,7 @@ const PlaceItem = (props) => {
         footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       >
         <div className="map-container">
-          <h2>THE MAP!</h2>
+          <Map coordinates={props.coordinates} />
         </div>
       </Modal>
       <li className="place-item">
