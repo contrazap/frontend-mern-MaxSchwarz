@@ -1,0 +1,14 @@
+{
+  "hosting": [
+    {
+      "public": "build",
+      "ignore": ["vercel.json", "**/.*", "**/node_modules/**"]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "index.html"
+    }
+  ]
+}
